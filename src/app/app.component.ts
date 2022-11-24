@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'first-angular';
+  constructor(){
+    setTimeout(() => {
+        this.title = "second Angular"
+    }, 2000);
+
+  }
 }
